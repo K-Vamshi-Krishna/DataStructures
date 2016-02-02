@@ -32,7 +32,7 @@ class FenwickTree
 		while(ind>=0)
 		{
 			sum += tree[ind];
-			inx -= ind &(-ind);// ind &= ind +1; ind--;	
+			ind -= ind &(-ind);// ind &= ind +1; ind--;	
 		}
 		return sum;
 	}
